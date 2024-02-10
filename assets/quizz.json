@@ -1,0 +1,124 @@
+{
+  "data_structures": [
+    {
+      "name": "Array",
+      "time_complexity": {
+        "access": "O(1)",
+        "search": "O(n)",
+        "insertion": "O(n)",
+        "deletion": "O(n)"
+      },
+      "space_complexity": "O(n)"
+    },
+    {
+      "name": "Linked List",
+      "time_complexity": {
+        "access": "O(n)",
+        "search": "O(n)",
+        "insertion": "O(1)",
+        "deletion": "O(1)"
+      },
+      "space_complexity": "O(n)"
+    },
+    {
+      "name": "Stack",
+      "time_complexity": {
+        "access": "O(n)",
+        "search": "O(n)",
+        "insertion": "O(1)",
+        "deletion": "O(1)"
+      },
+      "space_complexity": "O(n)"
+    },
+    {
+      "name": "Queue",
+      "time_complexity": {
+        "access": "O(n)",
+        "search": "O(n)",
+        "insertion": "O(1)",
+        "deletion": "O(1)"
+      },
+      "space_complexity": "O(n)"
+    },
+    {
+      "name": "Hash Table",
+      "time_complexity": {
+        "access": "O(1)",
+        "search": "O(1)",
+        "insertion": "O(1)",
+        "deletion": "O(1)"
+      },
+      "space_complexity": "O(n)"
+    },
+    {
+      "name": "Binary Tree",
+      "time_complexity": {
+        "access": "O(n)",
+        "search": "O(n)",
+        "insertion": "O(n)",
+        "deletion": "O(n)"
+      },
+      "space_complexity": "O(n)"
+    },
+    {
+      "name": "Binary Search Tree (BST)",
+      "time_complexity": {
+        "access": "O(log n)",
+        "search": "O(log n)",
+        "insertion": "O(log n)",
+        "deletion": "O(log n)"
+      },
+      "space_complexity": "O(n)"
+    },
+    {
+      "name": "Heap",
+      "time_complexity": {
+        "access": "O(n)",
+        "search": "O(n)",
+        "insertion": "O(log n)",
+        "deletion": "O(log n)"
+      },
+      "space_complexity": "O(n)"
+    },
+    {
+      "name": "Graph",
+      "time_complexity": {
+        "access": "O(V + E)",
+        "search": "O(V + E)",
+        "insertion": "O(1)",
+        "deletion": "O(1)"
+      },
+      "space_complexity": "O(V + E)"
+    },
+    {
+      "name": "Set",
+      "time_complexity": {
+        "access": "O(1)",
+        "search": "O(1)",
+        "insertion": "O(1)",
+        "deletion": "O(1)"
+      },
+      "space_complexity": "O(n)"
+    },
+    {
+      "name": "Priority Queue",
+      "time_complexity": {
+        "access": "O(n)",
+        "search": "O(n)",
+        "insertion": "O(log n)",
+        "deletion": "O(log n)"
+      },
+      "space_complexity": "O(n)"
+    },
+    {
+      "name": "Skip List",
+      "time_complexity": {
+        "access": "O(log n)",
+        "search": "O(log n)",
+        "insertion": "O(log n)",
+        "deletion": "O(log n)"
+      },
+      "space_complexity": "O(n)"
+    }
+  ]
+}
