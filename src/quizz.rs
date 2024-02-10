@@ -1,8 +1,10 @@
-use std::fs::read_to_string;
 use std::io::stdin;
 use colored::Colorize;
 
 const DATA_STRUCTURES_KEY: &str = "data_structures";
+const TIME_COMPLEXITY_KEY: &str = "time_complexity";
+const SPACE_COMPLEXITY_KEY: &str = "space_complexity";
+const QUESTION_NAME_KEY: &str = "name";
 
 pub struct Stats {
     pub correct: u8,
@@ -44,8 +46,8 @@ pub fn ask_for_complexity_type() -> u8 {
 
 pub fn ask_about_time_complexity(question: &serde_json::Value, stats: &mut Stats) {
     println!("What is the time complexity of the following function?");
-    let time_complexity = question["time_complexity"].as_object().unwrap();
-    let question_name = question["name"].as_str().unwrap();
+    let time_complexity = question[TIME_COMPLEXITY_KEY].as_object().unwrap();
+    let question_name = question[QUESTION_NAME_KEY].as_str().unwrap();
 
     let random_operation = rand::random::<usize>() % time_complexity.len();
     let picked_key = time_complexity.keys().nth(random_operation).unwrap();
@@ -60,8 +62,8 @@ pub fn ask_about_time_complexity(question: &serde_json::Value, stats: &mut Stats
 
 pub fn ask_about_space_complexity(question: &serde_json::Value, stats: &mut Stats) {
     println!("What is the space complexity of the following function?");
-    let space_complexity = question["space_complexity"].as_str().unwrap();
-    let question_name = question["name"].as_str().unwrap();
+    let space_complexity = question[SPACE_COMPLEXITY_KEY].as_str().unwrap();
+    let question_name = question[QUESTION_NAME_KEY].as_str().unwrap();
 
     println!("{} - {}: ", question_name, space_complexity);
     let mut user_answer = String::new();
